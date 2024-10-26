@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Trouvez les dernières collections de vêtements de sport et accessoires sur M'S Sportswear" />
+    <script
+      src="https://kit.fontawesome.com/c8bcc72f6d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="./node_modules/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>M'S Sportswear Détail Produit</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="flex justify-between align-center paddings">
+      <div class="logo">
+        <a href="#" id="accueil">
+          <img
+            src="./imagesSIte/logo-blanc.png"
+            alt="Logo du site Men's Sportswear"
+          />
+        </a>
+      </div>
+      <nav class="header-nav">
+        <div class="close-burger">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <ul class="flex gap20 style-none">
+          <li><a href="./index.html">Accueil</a></li>
+          <li><a href="./categorie-basket.html">Chaussures</a></li>
+          <li><a href="#">Vêtements</a></li>
+          <li><a href="#">Accessoires</a></li>
+          <li><a class="shoes" href="#">@utdoor</a></li>
+        </ul>
+      </nav>
+      <div class="picto flex gap20">
+        <a href="#">
+          <img
+            src="./imagesSIte/header-pannier.png"
+            alt="pictogramme du panier pour voir les achats"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="./imagesSIte/header-account.png"
+            alt="pictogramme pour le compte"
+          />
+        </a>
+      </div>
+      <div class="icon">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+
+    <div class="filtre flex">
+      <p class="chaussure">
+        <a href="./categorie-basket.html">Chaussures<i class="fa-solid fa-chevron-right"></i></a>
+      </p>
+      <p class="basket"><a href="#">Baskets<i class="fa-solid fa-chevron-right"></i></a></i></p>
+      <p class="libelle"><a href="#">Libelle du produit</a></p>
+    </div>
+
+    <!-- Swiper chaussure et détail produit-->
+    <section class="section-main flex">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide flex justify-center">
+            <img
+              src="./details-produit/basket2-bleu.png"
+              alt="photo d'une chaussure bleu de marque M'S Sportswear"
+            />
+          </div>
+          <div class="swiper-slide flex justify-center">
+            <img
+              src="./details-produit/basket2-violet.png"
+              alt="photo d'une chaussure violet de marque M'S Sportswear"
+            />
+          </div>
+          <div class="swiper-slide flex justify-center">
+            <img
+              src="./details-produit/basket2-rouge.png"
+              alt="photo d'une chaussure rouge de marque M'S Sportswear"
+            />
+          </div>
+          <div class="swiper-slide flex justify-center">
+            <img
+              src="./details-produit/basket2-vert.png"
+              alt="photo d'une chaussure verte de marque M'S Sportswear"
+            />
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="libelle-main">
+        <div class="lib-price flex justify-between">
+          <h2>Libellé du produit</h2>
+          <p><span>159€</span></p>
+        </div>
+        <div class="flex gap20">
+          <p>
+            Dernière née de la gamme, cette basket est conçue pour la course a
+            pied sur bitume comme sur les chemins légèrement escarpés.
+          </p>
+          <ul class="caract">
+            <li>semelle : caoutchouc naturel anti dérapant</li>
+            <li>bon maintien tu pied</li>
+            <li>
+              Aération optimale grâce a la structure micro alvéolée de sa coque
+            </li>
+          </ul>
+        </div>
+        <div class="flex justify-between">
+          <p class="font-weight">Couleurs disponibles</p>
+          <div class="flex gap20">
+            <div class="circle-color1"></div>
+            <div class="circle-color2"></div>
+            <div class="circle-color3"></div>
+            <div class="circle-color4"></div>
+          </div>
+        </div>
+        <div class="flex justify-between align-center">
+          <p class="font-weight">Tailles disponibles</p>
+          <select name="size" class="select" id="">
+            <option value="">39</option>
+            <option value="40">40</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="43">43</option>
+            <option value="44">44</option>
+            <option value="45">45</option>
+          </select>
+        </div>
+        <div class="flex justify-between align-center">
+          <p class="font-weight">Nombre d'articles en stock</p>
+          <p>67</p>
+        </div>
+        <button class="add">Ajouter au panier</button>
+      </div>
+
+      <!-- Section avis -->
+      <div class="avis flex flex-column">
+        <h2 class="consomateur">Avis des consommateurs</h2>
+        <div class="card-avis flex align-center">
+          <div class="avis-img">
+            <img src="./imagesSIte/header-account.png" alt="photo d'un profil" />
+          </div>
+          <div class="groupe flex">
+            <div class="flex avis-name align-center">
+              <h4>Nicolas</h4>
+              ★ ★ ★ ★ ☆
+            </div>
+            <p>
+              Ces baskets sont super, je les prends pour courrir ou même en
+              ville pour sortir car elles sont sympa en plus et faciles a
+              porter, je recommande grandement ce produit
+            </p>
+          </div>
+        </div>
+        <div class="card-avis flex align-center">
+          <div class="avis-img">
+            <img src="./imagesSIte/header-account.png" alt="photo d'un profil" />
+          </div>
+          <div class="groupe flex">
+            <div class="flex avis-name align-center">
+              <h4>Nicolas</h4>
+              ★ ★ ★ ★ ☆
+            </div>
+            <p>
+              Ces baskets sont super, je les prends pour courrir ou même en
+              ville pour sortir car elles sont sympa en plus et faciles a
+              porter, je recommande grandement ce produit
+            </p>
+          </div>
+        </div>
+        <div class="card-avis flex align-center">
+          <div class="avis-img">
+            <img src="./imagesSIte/header-account.png" alt="photo d'un profil" />
+          </div>
+          <div class="groupe flex">
+            <div class="flex avis-name align-center">
+              <h4>Nicolas</h4>
+              ★ ★ ★ ★ ☆
+            </div>
+            <p>
+              Ces baskets sont super, je les prends pour courrir ou même en
+              ville pour sortir car elles sont sympa en plus et faciles a
+              porter, je recommande grandement ce produit
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="flex justify-center flex-column align-center">
+        <img
+          src="./imagesSIte/logo-blanc.png"
+          alt="logo du site M'S Sportswear"
+        />
+        <p>Retrouvez nos boutiques près de chez vous</p>
+      </div>
+      <div id="map"></div>
+      <div class="container-footer flex justify-between align-center">
+        <div class="left flex flex-column">
+          <h4>Plan du site</h4>
+          <a href="#">Accueil</a>
+          <a href="#">Vêtements</a>
+          <a href="#">Chaussure</a>
+          <a href="#">@utdoor</a>
+        </div>
+        <div>
+          <h4 class="margin-b">Horaires d’ouverture de nos boutiques</h4>
+          <p>
+            Du lundi au vendredi de 10h à 12h30 puis de <br />
+            13h30 a 19h <br />
+            Le samedi de 9h a 18h30 non stop
+          </p>
+        </div>
+        <div class="right">
+          <h4 class="margin-b">Retrouvez nous sur les réseaux sociaux</h4>
+          <div>
+            <a href="#">
+              <img src="./imagesSIte/TwitterX.png" alt="lien du site Twitter" />
+            </a>
+            <a href="#">
+              <img
+                src="./imagesSIte/Facebook.png"
+                alt="lien du site Facebook"
+              />
+            </a>
+            <a href="#">
+              <img src="./imagesSIte/TikTok.png" alt="lien du site TikTok" />
+            </a>
+            <a href="#">
+              <img
+                src="./imagesSIte/Instagram.png"
+                alt="lien du site Instagram"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./node_modules/leaflet/dist/leaflet.js"></script>
+    <script type="module" src="./produit.js" defer></script>
+  </body>
+</html>

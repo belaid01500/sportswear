@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Trouvez les dernières collections de vêtements de sport et accessoires sur M'S Sportswear">
+    <script
+    src="https://kit.fontawesome.com/c8bcc72f6d.js"
+    crossorigin="anonymous"
+  ></script>
+
+    <link rel="stylesheet" href="./node_modules/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>M'S Sportswear Catégorie Baskets</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="flex justify-between align-center paddings">
+      <div class="logo">
+        <a href="#" id="accueil">
+          <img
+            src="./imagesSIte/logo-blanc.png"
+            alt="Logo du site Men's Sportswear"
+          />
+        </a>
+      </div>
+      <nav class="header-nav">
+        <div class="close-burger">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <ul class="flex gap20 style-none">
+          <li><a href="./index.html">Accueil</a></li>
+          <li><a href="#chaussures">Chaussures</a></li>
+          <li><a href="#">Vêtements</a></li>
+          <li><a href="#">Accessoires</a></li>
+          <li><a class="shoes" href="#">@utdoor</a></li>
+        </ul>
+      </nav>
+      <div class="picto flex gap20">
+        <a href="#">
+          <img
+            src="./imagesSIte/header-pannier.png"
+            alt="pictogramme du panier pour voir les achats"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="./imagesSIte/header-account.png"
+            alt="pictogramme pour le compte"
+          />
+        </a>
+      </div>
+      <div class="icon">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+
+    <div class="filtre flex">
+      <p class="chaussure">
+        <a href="#">Chaussures<i class="fa-solid fa-chevron-right"></i></a>
+      </p>
+      <p class="basket"><a href="#">Baskets<i class="fa-solid fa-chevron-right"></i></a></i></p>
+    </div>
+
+    <!-- Section Card Baskets -->
+    <section class="basket-main flex align-center justify-center" id="basket">
+      <!--  
+      <div class="card-basket">
+        <img src="./imagesProduits/basket1.jpg" alt="photo d'une chaussure">
+        <div class="titre-basket justify-between align-center">
+          <div class="air-max">
+            <h4>Nike Air Max 90</h4>
+          </div>
+          <div class="prix">
+            <p><span>40€</span></p>
+          </div>
+        </div>
+        <p class="des-basket margin-top">
+            Petite description du produit sur quelques lignes vite fait, et encore un peu plus
+        </p>
+      </div>
+      -->
+    </section>
+
+     <!-- Footer -->
+     <footer>
+      <div class="flex justify-center flex-column align-center">
+        <img src="./imagesSIte/logo-blanc.png" alt="logo du site M'S Sportswear">
+        <p>Retrouvez nos boutiques près de chez vous</p>
+      </div>
+      <div id="map"></div>
+      <div class="container-footer flex justify-between align-center">
+        <div class="left flex flex-column">
+          <h4>Plan du site</h4>
+          <a href="#">Accueil</a>
+          <a href="#">Vêtements</a>
+          <a href="#">Chaussure</a>
+          <a href="#">@utdoor</a>
+        </div>
+        <div>
+          <h4 class="margin-b">Horaires d’ouverture de nos boutiques</h4>
+          <p>
+            Du  lundi au vendredi de 10h à 12h30 puis de <br> 13h30 a 19h <br>
+            Le samedi de 9h a 18h30 non stop
+          </p>
+        </div>
+        <div class="right">
+          <h4 class="margin-b">Retrouvez nous sur les réseaux sociaux</h4>
+          <div>
+            <a href="#">
+              <img src="./imagesSIte/TwitterX.png" alt="lien du site Twitter">
+            </a>
+            <a href="#">
+              <img src="./imagesSIte/Facebook.png" alt="lien du site Facebook">
+            </a>
+            <a href="#">
+              <img src="./imagesSIte/TikTok.png" alt="lien du site TikTok">
+            </a>
+            <a href="#">
+              <img src="./imagesSIte/Instagram.png" alt="lien du site Instagram">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./node_modules/leaflet/dist/leaflet.js"></script>
+    <script src="./basket.js"></script>
+  </body>
+</html>

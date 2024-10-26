@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- meta description -->
+    <meta
+      name="description"
+      content="Trouvez les dernières collections de vêtements et de sport et accessoires sur M'S Sportswear sur le site ou boutique"
+    />
+    <script
+      src="https://kit.fontawesome.com/c8bcc72f6d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- link du CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./node_modules/leaflet/dist/leaflet.css" />
+    <title>M'S Sportswear</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="flex justify-between align-center paddings">
+      <div class="logo">
+        <a href="#" id="accueil">
+          <img
+            src="./imagesSIte/logo-blanc.png"
+            alt="Logo du site Men's Sportswear"
+          />
+        </a>
+      </div>
+      <nav class="header-nav">
+        <div class="close-burger">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <ul class="flex gap20 style-none">
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="./categorie-basket.html">Chaussures</a></li>
+          <li><a href="#">Vêtements</a></li>
+          <li><a href="#">Accessoires</a></li>
+          <li><a class="shoes" href="#">@utdoor</a></li>
+        </ul>
+      </nav>
+      <div class="picto flex gap20">
+        <a href="#">
+          <img
+            src="./imagesSIte/header-pannier.png"
+            alt="pictogramme du panier pour voir les achats"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="./imagesSIte/header-account.png"
+            alt="pictogramme pour le compte"
+          />
+        </a>
+      </div>
+      <div class="icon">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+
+    <!-- Section Hero avec call to action -->
+    <section class="hero">
+      <div class="text-align flex">
+        <h2>
+          Ne cherchez plus <br />
+          chaussure à votre pied
+        </h2>
+        <p>
+          Découvrez notre toute nouvelle gamme de baskets M'S déclinée en 4
+          coloris
+        </p>
+        <a href="./detail-produit.html">Découvrir la gamme</a>
+      </div>
+    </section>
+
+    <!-- Section Nos produit par catégories -->
+    <div class="container">
+      <h2 class="margin-b">Nos produits par catégories</h2>
+      <div class="main-card flex justify-between">
+        <!-- Chaussure -->
+        <div class="card flex">
+          <p class="center">CHAUSSURES</p>
+          <img
+            src="./imagesSIte/categorie-chaussures.jpg"
+            alt="photo d'une personne qui cours "
+          />
+          <div class="des flex gap26 margin-top">
+            <p>
+              Baskets, Chaussures de montagnes, Chaussures hautes, chaussures
+              <br />
+              basses, ... partez bien équipés
+            </p>
+            <a href="#">Voir les modèles de chaussures</a>
+          </div>
+        </div>
+        <!-- Accessoires -->
+        <div class="card flex">
+          <p class="center">ACCESSOIRES</p>
+          <img
+            src="./imagesSIte/categorie-accessoires.jpg"
+            alt="image d'une personne qui prend une photo "
+          />
+          <div class="des flex gap26 margin-top">
+            <p>
+              Sac à dos de randonnées, toiles de <br />
+              tente, réchauds, matériel de sport <br />
+              interieur et exterieur
+            </p>
+            <a class="accessoir-btn" href="#">Voir les accessoires</a>
+          </div>
+        </div>
+        <!-- Vêtements -->
+        <div class="card flex">
+          <p class="center">VÊTEMENTS</p>
+          <img
+            src="./imagesSIte/categorie-vetements.jpg"
+            alt="photo d'une personne qui s'échauffe "
+          />
+          <div class="des flex gap26 margin-top">
+            <p>
+              Vêtements tous sports, jogging, <br />
+              shorts, tee-shirts, hoodies, vestes, <br />
+              chaussettes et débardeurs
+            </p>
+            <a href="#">Voir les modèles de vêtements</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main et section  -->
+    <main>
+      <!-- @utdoor avec un call to action -->
+      <section class="gamme-utdoor">
+        <div class="utdoor-text flex">
+          <h2>Découvrez notre gamme @utdoor</h2>
+          <p>
+            Une séléction parmis les vêtements techniques de notre fabrication
+            <br />
+            ainsi que des meilleurs marques sur le marché
+          </p>
+          <a href="#">Voir les articles de la gamme @utdoor</a>
+        </div>
+      </section>
+
+      <!-- Nouveauté -->
+      <div class="nouveaute flex">
+        <div>
+          <img src="./imagesSIte/outdoor6.jpg" alt="photo d'un tee-shirt" />
+        </div>
+        <div class="bg-nouveaute">
+          <div class="price">
+            <p><span class="color">Nouveauté</span></p>
+            <p class="euro">40€</p>
+          </div>
+          <p class="white">
+            Tee shirt technique rando+, résistant, confortable, <br />
+            tissus déperlant
+          </p>
+          <ul>
+            <li>Respirabilité</li>
+            <li>Imperméabilité</li>
+            <li>Anti odeurs</li>
+          </ul>
+
+          <a href="#">Voir le détail du produit</a>
+        </div>
+      </div>
+
+      <!-- Ensemble Jogging -->
+      <section class="jogging-container flex justify-between align-center">
+        <div class="jogging">
+          <h2>Profitez de l'offre</h2>
+          <p class="weight">
+            L'ensemble jogging M'S noir <br />
+            disponible en plusieurs tailles
+          </p>
+          <p class="jogging-p margin-b">
+            Ce jogging alie confort légereté et douceur, pour du sport <br />
+            a l'exterieur comme pour les moments de détente a la <br />
+            maison
+          </p>
+          <a href="#">Voir le détail du produit</a>
+        </div>
+        <div>
+          <img
+            class="jogging-img"
+            src="./imagesSIte/Joogin-promo.jpg"
+            alt="photo d'une tenu de jogging"
+          />
+        </div>
+      </section>
+
+      <!-- Ils nous ont fait confiance -->
+      <section class="brand-container">
+        <h2>Ces marques nous font confiance</h2>
+        <div class="brand flex justify-between align-center">
+          <img
+            src="./imagesSIte/the-north-face.png"
+            alt="logo de la marque The North Face"
+          />
+          <img src="./imagesSIte/puma.png" alt="logo de la marque Puma" />
+          <img src="./imagesSIte/adidas.png" alt="logo de la marque Adidas" />
+          <img src="./imagesSIte/nike.png" alt="logo de la marque Nike" />
+        </div>
+      </section>
+
+      <!-- Article du site h1 -->
+      <article class="w1200 article flex justify-center">
+        <h1>
+          Chaussures, Vêtements <br />
+          et équipement sportif
+        </h1>
+        <p>
+          <strong>M’S</strong> est une boutique fondée en 1993 spécialisée dans
+          <strong>les vêtements , chaussures et équipements</strong> divers de
+          sports pour hommes. Notre objectif est de vous fournir le meilleur
+          pour la pratique de vos activités sportives en intérieur comme en
+          extérieur. Nous travaillons avec les plus grandes marques et nous
+          disposons de nos propres ateliers de fabrication. Parmi les nouveautés
+          issues de notre pole recherche et développement, les produits de
+          <strong>la gamme @utdoor</strong> pour les activités de plein air, qui
+          allient confort, respirabilité et protection grâce a nos matériaux à
+          la pointe de la technologie textile.
+        </p>
+      </article>
+
+      <!-- Section formulaire -->
+      <section class="form flex align-center gap">
+        <img
+          src="./imagesSIte/illustration-boxe.jpg"
+          alt="photo d'une personne pratiquant de la boxe"
+        />
+        <div class="form-contain flex flex-column gap20">
+          <div>
+            <h2 class="title">Contactez - nous</h2>
+            <p>
+              Pour des informations sur nos produits, pour toute demande de
+              <br />
+              renseignement ou pour nous faire remonter un problème techique sur
+              <br />
+              le site , merci de remplir le formulaire suivant
+            </p>
+          </div>
+          <form method="POST" id="form">
+            <div class="name flex justify-between">
+              <div class="nom">
+                <label for="nom">Votre nom</label>
+                <input type="text" name="nom" id="nom" />
+                <p class="p-error d-none" id="error-nom">
+                  Vous avez fait une dinguerie!
+                </p>
+              </div>
+              <div class="prenom">
+                <label for="prenom">Votre prenom</label>
+                <input type="text" id="prenom" name="prenom" />
+                <p class="p-error d-none" id="error-prenom">
+                  Vous avez fait une dinguerie!
+                </p>
+              </div>
+            </div>
+            <div>
+              <label for="email">Votre adresse de messagerie</label>
+              <input type="email" name="email" id="email" />
+              <p class="p-error d-none" id="error-email">
+                Vous avez fait une dinguerie!
+              </p>
+            </div>
+            <div>
+              <label for="object">Objet</label>
+              <select name="objet" id="objet">
+                <option value="">Objet</option>
+                <option value="Demande d’informations générales">
+                  Demande d’informations générales
+                </option>
+                <option value="Signaler un problème sur le site">
+                  Signaler un problème sur le site
+                </option>
+                <option value="info-produit">
+                  Demande d’information sur un produit
+                </option>
+                <option value="probleme-produit">
+                  Signaler un problème sur un produit
+                </option>
+              </select>
+
+              <div id="champsRef" class="none">
+                <label for="ref">Référence</label>
+                <input type="text" placeholder="FHG-654321" />
+              </div>
+
+              <p class="p-error d-none" id="error-objet">
+                Vous avez fait une dinguerie!
+              </p>
+            </div>
+            <div>
+              <label for="message">Votre message</label>
+              <textarea name="message" id="message"></textarea>
+              <p class="p-error d-none" id="error-message">
+                Vous avez fait une dinguerie!
+              </p>
+            </div>
+            <input class="btn" type="submit" value="Envoyer votre message" />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="flex justify-center flex-column align-center">
+        <img
+          src="./imagesSIte/logo-blanc.png"
+          alt="logo du site M'S Sportswear"
+        />
+        <p>Retrouvez nos boutiques près de chez vous</p>
+      </div>
+      <div id="map"></div>
+      <div class="container-footer flex justify-between align-center">
+        <div class="left flex flex-column">
+          <h4>Plan du site</h4>
+          <a href="#">Accueil</a>
+          <a href="#">Vêtements</a>
+          <a href="#">Chaussure</a>
+          <a href="#">@utdoor</a>
+        </div>
+        <div>
+          <h4 class="margin-b">Horaires d’ouverture de nos boutiques</h4>
+          <p>
+            Du lundi au vendredi de 10h à 12h30 puis de <br />
+            13h30 a 19h <br />
+            Le samedi de 9h a 18h30 non stop
+          </p>
+        </div>
+        <div class="right">
+          <h4 class="margin-b">Retrouvez nous sur les réseaux sociaux</h4>
+          <div>
+            <a href="#">
+              <img src="./imagesSIte/TwitterX.png" alt="lien du site Twitter" />
+            </a>
+            <a href="#">
+              <img
+                src="./imagesSIte/Facebook.png"
+                alt="lien du site Facebook"
+              />
+            </a>
+            <a href="#">
+              <img src="./imagesSIte/TikTok.png" alt="lien du site TikTok" />
+            </a>
+            <a href="#">
+              <img
+                src="./imagesSIte/Instagram.png"
+                alt="lien du site Instagram"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Les scripts reliés -->
+    <script src="./node_modules/leaflet/dist/leaflet.js"></script>
+    <script src="./app.js" defer></script>
+    <script src="./formulaire.js" defer></script>
+  </body>
+</html>
